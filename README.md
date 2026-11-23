@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Java по Шилдту
 
 Учебный проект по книге Герберта Шилдта «Java. Полное руководство», 12-е издание. Примеры рассчитаны на Java SE 17.
@@ -15,3 +16,7 @@ mvn test
 ```powershell
 java -cp target/classes org.example.Schildt.Main
 ```
+=======
+# 12-Schildt-
+примеры кода из книги
+>>>>>>> origin/main
