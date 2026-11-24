@@ -1,5 +1,6 @@
 // Страница 257 книги (PDF 258). Версия с дополнительным методом.
-class Client implements Callback {
+class Client06Full implements Callback06Full {
+    // Реализовать метод интерфейса Callback06Full.
     public void callback(int p) {
         System.out.println("callback() вызывается со значением " + p);
     }

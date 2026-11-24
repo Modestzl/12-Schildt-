@@ -2,5 +2,5 @@
 // Это фрагмент объявления класса, без метода main.
 import java.util.*;
 
-class MyDate extends Date {
+class MyDate03Import extends Date {
 }

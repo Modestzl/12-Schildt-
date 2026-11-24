@@ -7,5 +7,6 @@ public interface InterfaceTemplate {
     int method2();
 
     int CONSTANT1 = 1;
+    // ...
     int CONSTANT2 = 2;
 }

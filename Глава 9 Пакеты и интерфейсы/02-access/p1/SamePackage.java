@@ -7,7 +7,7 @@ class SamePackage {
         System.out.println("Конструктор класса из того же пакета");
         System.out.println("n = " + p.n);
 
-        // Только класс Protection. Раскомментирование вызовет ошибку доступа.
+        // Только класс.
         // System.out.println("n_pri = " + p.n_pri);
 
         System.out.println("n_pro = " + p.n_pro);

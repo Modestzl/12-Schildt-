@@ -16,15 +16,16 @@ class Question implements SharedConstants {
     int ask() {
         int prob = (int) (100 * rand.nextDouble());
         if (prob < 30)
-            return NO;       // 30%.
+            return NO;       // 30%
         else if (prob < 60)
-            return YES;      // 30%.
+            return YES;      // 30%
         else if (prob < 75)
-            return LATER;    // 15%.
+            return LATER;    // 15%
         else if (prob < 98)
-            return SOON;     // 23%. В книге опечатка в комментарии: 13%.
+            // Примечание к опечатке автора: диапазон 75-97 даёт 23%, а не 13%.
+            return SOON;     // 13%
         else
-            return NEVER;    // 2%.
+            return NEVER;    // 2%
     }
 }
 

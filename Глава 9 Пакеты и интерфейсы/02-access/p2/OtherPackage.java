@@ -6,13 +6,13 @@ class OtherPackage {
         p1.Protection p = new p1.Protection();
         System.out.println("Конструктор класса из другого пакета");
 
-        // Только класс или пакет, где объявлено поле.
+        // Только класс или пакет.
         // System.out.println("n = " + p.n);
 
-        // Только класс Protection.
+        // Только класс.
         // System.out.println("n_pri = " + p.n_pri);
 
-        // В этом случае нужны тот же пакет или доступ из подкласса.
+        // Только класс, подкласс или пакет.
         // System.out.println("n_pro = " + p.n_pro);
 
         System.out.println("n_pub = " + p.n_pub);

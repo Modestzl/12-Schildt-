@@ -1,14 +1,17 @@
 // Страница 265 книги (PDF 266). Наследование интерфейса через extends.
-interface A {
+// Один интерфейс может расширять другой.
+interface A10 {
     void meth1();
     void meth2();
 }
 
-interface B extends A {
+// Интерфейс B10 теперь включает meth1() и meth2() - он добавляет meth3().
+interface B10 extends A10 {
     void meth3();
 }
 
-class MyClass implements B {
+// Этот класс должен реализовать все методы интерфейсов A10 и B10.
+class MyClass10 implements B10 {
     public void meth1() {
         System.out.println("Реализация meth1().");
     }
@@ -24,7 +27,7 @@ class MyClass implements B {
 
 class IFExtend {
     public static void main(String[] args) {
-        MyClass ob = new MyClass();
+        MyClass10 ob = new MyClass10();
         ob.meth1();
         ob.meth2();
         ob.meth3();

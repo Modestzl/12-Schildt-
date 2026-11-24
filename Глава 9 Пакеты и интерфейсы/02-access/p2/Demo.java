@@ -1,6 +1,8 @@
 // Страница 252 книги (PDF 253). Тестирование пакета p2.
+// Тестирование пакета p2.
 package p2;
 
+// Создать экземпляры различных классов в p2.
 public class Demo {
     public static void main(String[] args) {
         Protection2 ob1 = new Protection2();

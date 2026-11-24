@@ -3,8 +3,9 @@ import mypack.*;
 
 class TestBalance {
     public static void main(String[] args) {
-        // Balance и его конструктор открыты.
+        /* Поскольку Balance открыт, вы можете использовать
+           класс Balance и вызывать его конструктор. */
         Balance test = new Balance("J. J. Jaspers", 99.88);
-        test.show(); // Метод show() также открыт.
+        test.show(); // вы можете также вызывать метод show()
     }
 }

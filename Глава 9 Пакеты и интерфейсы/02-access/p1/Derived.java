@@ -6,7 +6,7 @@ class Derived extends Protection {
         System.out.println("Конструктор производного класса");
         System.out.println("n = " + n);
 
-        // Только класс Protection. Раскомментирование вызовет ошибку доступа.
+        // Только класс.
         // System.out.println("n_pri = " + n_pri);
 
         System.out.println("n_pro = " + n_pro);

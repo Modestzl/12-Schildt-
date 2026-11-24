@@ -12,7 +12,7 @@ interface Beta {
     }
 }
 
-class MyClass implements Alpha, Beta {
+class MyClass13 implements Alpha, Beta {
     // Без собственного reset() возникает конфликт двух стандартных методов.
     public void reset() {
         System.out.println("MyClass.reset()");
@@ -23,6 +23,6 @@ class MyClass implements Alpha, Beta {
 
 class DefaultConflictDemo {
     public static void main(String[] args) {
-        new MyClass().reset();
+        new MyClass13().reset();
     }
 }

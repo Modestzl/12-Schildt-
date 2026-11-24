@@ -1,9 +1,10 @@
 // Страница 262 книги (PDF 263). Рост двух динамических стеков.
 class IFTest2 {
     public static void main(String[] args) {
-        DynStack mystack1 = new DynStack(5);
-        DynStack mystack2 = new DynStack(8);
+        DynStack08 mystack1 = new DynStack08(5);
+        DynStack08 mystack2 = new DynStack08(8);
 
+        // Эти циклы заставляют увеличиваться каждый стек.
         for (int i = 0; i < 12; i++) mystack1.push(i);
         for (int i = 0; i < 20; i++) mystack2.push(i);
 

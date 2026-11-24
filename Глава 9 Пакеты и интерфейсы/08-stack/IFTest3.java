@@ -1,14 +1,18 @@
-// Страницы 262-263 книги (PDF 263-264). Две реализации через один IntStack.
+// Страницы 262-263 книги (PDF 263-264). Две реализации через один IntStack08.
+/* Создать переменную ссылки на интерфейс и организовать
+   через нее доступ к стекам.
+*/
 class IFTest3 {
     public static void main(String[] args) {
-        IntStack mystack;
-        DynStack ds = new DynStack(5);
-        FixedStack fs = new FixedStack(8);
+        IntStack08 mystack; // создать переменную ссылки на интерфейс
+        DynStack08 ds = new DynStack08(5);
+        FixedStack08 fs = new FixedStack08(8);
 
-        mystack = ds;
+        mystack = ds; // загрузить в стек с динамическим размером
+        // Поместить несколько чисел в стеки.
         for (int i = 0; i < 12; i++) mystack.push(i);
 
-        mystack = fs;
+        mystack = fs; // загрузить в стек с фиксированным размером
         for (int i = 0; i < 8; i++) mystack.push(i);
 
         mystack = ds;

@@ -1,17 +1,21 @@
 // Повторное использование реализации из 08-stack для отдельного примера.
 // Страницы 261-262 книги (PDF 262-263). Стек с удвоением массива.
-class DynStack implements IntStack {
+// Реализовать "расширяемый" стек.
+class DynStack15 implements IntStack15 {
     private int[] stck;
     private int tos;
 
-    DynStack(int size) {
+    // Разместить в памяти и инициализировать стек.
+    DynStack15(int size) {
         stck = new int[size];
         tos = -1;
     }
 
+    // Поместить элемент в стек.
     public void push(int item) {
+        // Если стек полон, тогда создать стек большего размера.
         if (tos == stck.length - 1) {
-            int[] temp = new int[stck.length * 2];
+            int[] temp = new int[stck.length * 2]; // удвоить размер
             for (int i = 0; i < stck.length; i++) temp[i] = stck[i];
             stck = temp;
             stck[++tos] = item;
@@ -19,6 +23,7 @@ class DynStack implements IntStack {
             stck[++tos] = item;
     }
 
+    // Извлечь элемент из стека.
     public int pop() {
         if (tos < 0) {
             System.out.println("Стек опустошен.");
