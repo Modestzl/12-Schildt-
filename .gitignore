@@ -6,7 +6,8 @@ target/
 
 ### IntelliJ IDEA ###
 /.idea/
-/out/
+out/
+*.class
 *.iws
 *.iml
 *.ipr
@@ -35,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Java textbook ###
+/Java Полное руководство, 12-е изд_221214_191444.pdf

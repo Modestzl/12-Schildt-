@@ -1,0 +1,16 @@
+// Страница 251 книги (PDF 252). Другой класс того же пакета.
+package p1;
+
+class SamePackage {
+    SamePackage() {
+        Protection p = new Protection();
+        System.out.println("Конструктор класса из того же пакета");
+        System.out.println("n = " + p.n);
+
+        // Только класс Protection. Раскомментирование вызовет ошибку доступа.
+        // System.out.println("n_pri = " + p.n_pri);
+
+        System.out.println("n_pro = " + p.n_pro);
+        System.out.println("n_pub = " + p.n_pub);
+    }
+}
