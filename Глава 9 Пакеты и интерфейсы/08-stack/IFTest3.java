@@ -8,7 +8,7 @@ class IFTest3 {
         DynStack08 ds = new DynStack08(5);
         FixedStack08 fs = new FixedStack08(8);
 
-        mystack = ds; // загрузить в стек с динамическим размером
+        mystack = ds; // теперь работаем с динамическим стеком через mystack
         // Поместить несколько чисел в стеки.
         for (int i = 0; i < 12; i++) mystack.push(i);
 
